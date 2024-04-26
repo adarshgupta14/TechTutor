@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTutor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+        }
+
+        .row {
+            margin-left: 2px;
+            margin-right: 2px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .layer {
+            width: 83%;
+            height: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+            position: absolute;
+            border-radius: 8px;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+            padding: 0 40px;
+            transition: height 0.5s;
+        }
+
+        .layer h5 {
+            color: #000000;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .row img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .layer p {
+            color: #000;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .layer i {
+            margin-top: 20px;
+            font-size: 20px;
+            background: #fff;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .second{
+            background: linear-gradient(rgba(0, 0, 0, 0.1), yellow);
+        }
+        .third{
+            background: linear-gradient(rgba(0, 0, 0, 0.1), orange);
+        }
+
+        .row:hover img {
+            transform: scale(1.1);
+        }
+
+        .row:hover .layer {
+            height: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 99.888%;
+        }
+    </style>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to TechTutor</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="courses.html" target="_blank">Courses</a>
+        <a href="contact.html" target="_blank">Contact</a>
+    </nav>
+    <section>
+        <h2 style="margin: 0px 0px 20px;">About</h2>
+        Discover your potential with our comprehensive technical courses. Our website offers a diverse range of programs tailored to suit your learning needs, from coding to cybersecurity and beyond. With expert instructors and interactive content, we ensure a dynamic learning experience for all skill levels. Join our community today and unlock endless possibilities in the world of technology.
+    </section>
+    <section>
+        <h2 style="margin: 0px 0px 20px;">Featured Courses</h2>
+        <div class="project-content">
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDWfGPsuQKuWateaRbWeBo1MDhM3A" alt="">
+                <div class="layer">
+                    <h5>Sigma Web Development Course</h5>
+                    <p>Complete fullstack webdevelopment course by CodewithHarry.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w" target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/irqbmMNs2Bo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDqgyUYY4Fvk28Q_uC8G2fPPSyZUg" alt="">
+                <div class="layer second">
+                    <h5>C Programming</h5>
+                    <p>Complete C programming by Apna College.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe25HU2y-3Kx6MBsasawd61U" target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/z9bZufPHFLU/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLATcUN7NPjsdcKSq8bFSEeilhzrMA" alt="">
+                <div class="layer third">
+                    <h5>C++</h5>
+                    <p>Complete C++ by Apna College.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ" target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;TechTutor : All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

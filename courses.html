@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        /* Main Content  */
+        .project-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+        }
+
+        .row {
+            margin: 5px 5px 5px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .layer {
+            width: 83%;
+            height: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+            position: absolute;
+            border-radius: 8px;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+            padding: 0 40px;
+            transition: height 0.5s;
+        }
+
+        .layer h5 {
+            color: #000000;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .row img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .layer p {
+            color: #000;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .layer i {
+            margin-top: 20px;
+            font-size: 20px;
+            background: #fff;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .second {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), yellow);
+        }
+
+        .third {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), orange);
+        }
+
+        .fourth {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(255, 72, 0));
+        }
+
+        .fifth {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(58, 52, 52));
+        }
+
+        .sixth {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(92, 31, 190));
+        }
+
+        .ninth {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 132, 255));
+        }
+
+        .row:hover img {
+            transform: scale(1.1);
+        }
+
+        .row:hover .layer {
+            height: 100%;
+        }
+
+
+        /* Coming Soon */
+        .button-box {
+            display: inline-flex;
+            margin: 50px 0px 0px ;
+            padding: 12px 18px;
+            background: rgb(0, 0, 0);
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px 2px #595959;
+            font-size: 16px;
+            color: rgb(247, 229, 193);
+            letter-spacing: .1px;
+            font-weight: 600;
+        }
+
+        .container {
+            display: grid;
+            place-items: center;
+        }
+
+        /* Footer  */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 99.888%;
+        }
+    </style>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to TechTutor</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Courses</a>
+        <a href="contact.html" target="_blank">Contact</a>
+    </nav>
+    <section>
+        <h2>All Courses</h2>
+        <div class="project-content">
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDWfGPsuQKuWateaRbWeBo1MDhM3A"
+                    alt="">
+                <div class="layer">
+                    <h5>Sigma Web Development Course</h5>
+                    <p>Complete fullstack webdevelopment course by CodewithHarry.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w"
+                        target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/irqbmMNs2Bo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDqgyUYY4Fvk28Q_uC8G2fPPSyZUg"
+                    alt="">
+                <div class="layer second">
+                    <h5>C Programming</h5>
+                    <p>Complete C programming by Apna College.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe25HU2y-3Kx6MBsasawd61U"
+                        target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/z9bZufPHFLU/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLATcUN7NPjsdcKSq8bFSEeilhzrMA"
+                    alt="">
+                <div class="layer third">
+                    <h5>C++</h5>
+                    <p>Complete C++ by Apna College.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ"
+                        target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/DZKOunP-WLQ/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDyJYI0-xTInWWie8sEKg8D-Ou6uw"
+                    alt="">
+                <div class="layer fourth">
+                    <h5>NEXT.js</h5>
+                    <p>Complete Next.js by CodewithHarry.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agtWvR_TZdb_r0dNI8-lDwG"
+                        target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/yRpLlJmRo2w/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB953onHqGMzlmf8cMVs-n9pUaNRA"
+                    alt="">
+                <div class="layer fifth">
+                    <h5>Java</h5>
+                    <p>Complete Java by Apna College.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop"
+                        target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/7wnove7K-ZQ/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBHP0XaWCWf6WLftS6hJhmoD3aMEw"
+                    alt="">
+                <div class="layer sixth">
+                    <h5>Python</h5>
+                    <p>Complete Python by CodewithHarry.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg"
+                        target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/ajdRvxDWH4w/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDHZkl1toTFHBY8cD7PLeg9Jxd5oA"
+                    alt="">
+                <div class="layer second">
+                    <h5>Javascript</h5>
+                    <p>Complete Javascript by Apna College.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLGjplNEQ1it_oTvuLRNqXfz_v_0pq6unW"
+                        target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/LpCFF2hzPzs/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDa65qWmk8hXsfDrlzfIEFW7HI9CA"
+                    alt="">
+                <div class="layer fourth">
+                    <h5>Portfolio Website</h5>
+                    <p>Creation of a portfolio website.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ag1cN0n_UcNRN7fYIwNYJDQ"
+                        target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <img src="https://i.ytimg.com/vi/L4_jarMnB0c/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAk2Dj9s2-GAP2AegkTCxpEycz0ag"
+                    alt="">
+                <div class="layer ninth">
+                    <h5>Tailwind CSS</h5>
+                    <p>Master Tailwind CSS by CodewithHarry.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahwFDuExCpPFHAK829Wto2O"
+                        target="_blank"><i class="bx bx-link-external" style="color: #000;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="button-box">
+                More Courses Coming Soon
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;TechTutor : All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
